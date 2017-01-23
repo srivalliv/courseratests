@@ -7,7 +7,7 @@ body {
 
 /** HEADER **/
 #header-nav {
-  background-color: #fffccc;
+  background-color: #d3d3d3;
   border-radius: 0;
   border: 0;
 }
@@ -22,6 +22,7 @@ h1
 {
 	text-align: center;
 	font-size: 1.6em;
+  font-weight: bold;
 }
 
 .navbar-brand
@@ -41,15 +42,23 @@ h1
 
 .maindiv .contsection
 {
-	width: 100%;
+	width: 92%;
 	height:auto;
 	float:left;
 	line-height: 25px;
 	color:#000;
-	background-color:#666;
+	background-color:#d3d3d3;
 	border:1px solid #333;
 	padding:10px;
-	margin:15px;
+	margin:15px 4%;
+  box-sizing: border-box;
+}
+
+.contsection p
+{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em
 }
 
 /********** Large devices only **********/
@@ -69,15 +78,27 @@ h1
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
- 
+ .nav>li>a
+{
+  text-align: center;
+  border-bottom:1px solid #666;
+}
+.navbar-nav
+{
+   margin:0px -15px;
+}
 }
 
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
-.nav-list li
+.nav>li>a
 {
 	text-align: center;
-	border-bottom:1px solid #d3d3d3;
+	border-bottom:1px solid #666;
+}
+.navbar-nav
+{
+  margin:0px -15px;
 }
 }
